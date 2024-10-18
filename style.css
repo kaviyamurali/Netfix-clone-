@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.image{
+
+    margin-top: -10px;
+    display: flex;
+}
+
+.menu{
+
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
+  .nav div{
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 25px;
+    transition: 0.3s;
+    display: flex;
+  }
+  
+  .nav{
+    width: 30px;
+    display: block;
+    margin: 1em 0 0 1em;
+  
+  }
+  .one{
+    width: 30px;
+  }
+  .two{
+    width: 20px;
+  }
+  
+  .three{
+    width: 25px;
+  }
+  
+  .nav:hover div{
+    width: 30px;
+    cursor: pointer;
+  }
+  .area button{
+    display: flex;
+    background-color: white;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 70px;
+    margin-right: 40px;
+    padding: 10px;
+    margin: auto;
+    justify-content: center;  
+    margin-top: 20px; 
+  }
+  
+  .button:hover{
+
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .main {
+    width: 100%;
+    margin-top: -120px;
+    background-size: cover;
+    align-items: center;
+    overflow-x: hidden;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+    min-height: 710px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(https://assets.nflxext.com/ffe/siteui/vlv3/a1dc92ca-091d-4ca9-a05b-8cd44bbfce6a/f9368347-e982-4856-a5a4-396796381f28/RS-en-20191230-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  }
+  
+  .area {
+    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .area h1 {
+    font-size: 60px;
+    word-spacing: 15px;
+    line-height: 75px;
+  }
+  
+  .area h3 {
+    margin-top: 10px;
+    font-size: 27px;
+    font-weight: normal;
+  }
+  
+  .search {
+    width: 150%;
+    background-color: none;
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .box {
+    width: 100%;
+    min-height: 55px;
+  }
+  
+  .try {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #e50914;
+    min-height: 60px;
+    width: 70%;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  .try:hover{
+
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  
+  .area h4 {
+    margin-top: 10px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+
+  .recomend{
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+   }
+   .images section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+   }
+   .images section .item {
+    padding: 0 2px;
+    transition: 250ms all;
+   }
+   .images section .item:hover {
+    margin: 0 40px;
+    transform: scale(1.1);
+    cursor: pointer;
+   }
+   .images section a {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 4em;
+    background: black;
+    width: 50px;
+    padding: 50px;
+    text-align: center;
+    z-index: 1;
+   }
+   .images section a:nth-of-type(1) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+   }
+   .images section a:nth-of-type(2) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+   }
+   @media only screen and (max-width: 600px) {
+    a.arrow__btn {
+    display: none;
+    }
+   }
+   
+   .container1 {
+    width: 100%;
+    min-height: 460px;
+    background-color: black;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+  
+  .container1 img {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    object-fit: contain;
+    object-position: center;
+    align-self: center;
+  
+    max-width: 100%;
+    height: 350px;
+  }
+  
+  .container1 .image {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    object-fit: contain;
+  }
+  
+  .image:hover{
+
+    background-color: transparent;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .text {
+    color: white;
+    align-self: center;
+    align-content: center;
+    display: block;
+  }
+  .text p {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  .text h1 {
+    font-size: 3.125rem;
+    display: block;
+  }
+
+  .footercon{
+
+    background-color: black;
+    display: flex;
+    color: white;
+    font-size: 15px;
+
+  }
+
+  li{
+    padding: 5px;
+  }
+
+  .one{
+    padding-left: 390px;
+  }
+
+ .two{
+    margin-left: 400px;
+  }
+
+  .logocon{
+
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+  }
+  .logopic{
+    height: 100px;
+    width: 100px;
+  }
+  .logopic:hover{
+
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  
